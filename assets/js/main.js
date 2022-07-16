@@ -45,8 +45,8 @@ window.addEventListener('scroll', scrollActive)
 function scrollTop() {
     const scrollTop = document.getElementById('scroll-top');
     // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
-    if (this.scrollY >= 200) scrollTop.classList.add('show-scroll');
-    else scrollTop.classList.remove('show-scroll')
+    if (this.scrollY >= 200) { scrollTop.classList.add('show-scroll'); } else { scrollTop.classList.remove('show-scroll') }
+
 }
 window.addEventListener('scroll', scrollTop)
 
@@ -108,7 +108,7 @@ let opt = {
     filename: 'myResume.pdf',
     image: { type: 'jpeg', quality: 0.98 },
     html2canvas: { scale: 4 },
-    jsPDF: { format: 'a4', orientation: 'portrait' }
+    jsPDF: { format: 'A4', orientation: 'portrait' }
 };
 
 function generateResume() {
