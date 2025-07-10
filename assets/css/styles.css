@@ -231,7 +231,7 @@ img {
 }
 
 .section {
-    padding: 1.5rem 0;
+    padding: 1rem 0;
 }
 
 .section-title {
@@ -251,7 +251,7 @@ img {
 /*========== LAYOUT ==========*/
 
 .bd-container {
-    max-width: 968px;
+    max-width: 1140px;
     width: calc(100% - 3rem);
     margin-left: var(--mb-3);
     margin-right: var(--mb-3);

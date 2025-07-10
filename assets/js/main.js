@@ -104,7 +104,7 @@ resumeButton.addEventListener('click', () => {
 
 // Html2pdf options
 let opt = {
-    margin: 2,
+    margin: 1,
     filename: 'myResume.pdf',
     image: { type: 'jpeg', quality: 0.98 },
     html2canvas: { scale: 4 },
