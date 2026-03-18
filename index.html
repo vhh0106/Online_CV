@@ -1,359 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--========== BOX ICONS ==========-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-
-    <!--========== CSS ==========-->
     <link rel="stylesheet" href="assets/css/styles.css">
-
-    <title>CV Online</title>
+    <title>Vu Hoang Hiep | Frontend Developer</title>
 </head>
-
 <body>
-    <!--========== HEADER ==========-->
     <header class="l-header" id="header">
         <nav class="nav bd-container">
-            <a href="#" class="nav_logo">CV VHH</a>
+            <a href="#home" class="nav_logo">VHH Resume</a>
 
             <div class="nav_menu" id="nav-menu">
                 <ul class="nav_list">
                     <li class="nav_item">
-                        <a href="#home" class="nav_link active-link">
-                            <i class='bx bx-home nav_icon'></i>Home
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#profile" class="nav_link">
-                            <i class='bx bx-user nav_icon'></i>Profile
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#education" class="nav_link">
-                            <i class='bx bx-book nav_icon'></i>Education
+                        <a href="#profile" class="nav_link active-link">
+                            <i class="bx bx-user nav_icon"></i>Profile
                         </a>
                     </li>
                     <li class="nav_item">
                         <a href="#skills" class="nav_link">
-                            <i class='bx bx-receipt nav_icon'></i>Skills
+                            <i class="bx bx-receipt nav_icon"></i>Skills
                         </a>
                     </li>
                     <li class="nav_item">
                         <a href="#experience" class="nav_link">
-                            <i class='bx bx-briefcase-alt nav_icon'></i>Experience
+                            <i class="bx bx-briefcase-alt nav_icon"></i>Experience
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#projects" class="nav_link">
+                            <i class="bx bx-layer nav_icon"></i>Projects
                         </a>
                     </li>
                     <li class="nav_item">
                         <a href="#certificate" class="nav_link">
-                            <i class='bx bx-award nav_icon'></i>Certificate
+                            <i class="bx bx-award nav_icon"></i>Certificates
                         </a>
                     </li>
-                    <li class="nav_item">
-                        <a href="#references" class="nav_link">
-                            <i class='bx bx-link-external nav_icon'></i>References
-                        </a>
-                    </li>
-
                 </ul>
-
             </div>
-            <div class="nav_toggle" id="nav-toggle">
-                <i class='bx bx-grid-alt'></i>
 
+            <div class="nav_actions">
+                <button type="button" class="icon_button change-theme" title="Toggle theme" id="theme-button" aria-label="Toggle theme">
+                    <i class="bx bx-moon"></i>
+                </button>
+                <button type="button" class="icon_button generate-pdf" title="Download PDF" id="resume-button" aria-label="Download PDF">
+                    <i class="bx bx-download"></i>
+                </button>
+                <button type="button" class="nav_toggle" id="nav-toggle" aria-label="Toggle menu">
+                    <i class="bx bx-grid-alt"></i>
+                </button>
             </div>
         </nav>
     </header>
 
-    <main class="l-main bd-container">
-        <!-- All elements within this div, is generated in PDF -->
-        <div class="resume" id="area-cv">
-            <div class="resume_left">
-                <!--========== HOME ==========-->
-                <section class="home" id="home">
-                    <div class="home_container section bd-grid">
-                        <div class="home_data bd-grid">
-                            <img src="assets/img/image.jpg" alt="" class="home_img">
-                            <h1 class="home_title">VU HOANG HIEP</h1>
-                            <h3 class="home_profession">Frontend Developer</h3>
-
-                            <div>
-                                <a download="" href="assets/pdf/ResumeCv.pdf" class="home_button-movil">Download CV</a>
-                            </div>
+    <main class="page-shell">
+        <div class="resume-frame bd-container">
+            <article class="resume" id="area-cv">
+                <aside class="resume_left">
+                    <section class="home" id="home">
+                        <div class="home_avatar">
+                            <img src="assets/img/image.jpg" alt="Vu Hoang Hiep portrait" class="home_img">
                         </div>
-                        <div class="home_address bd-grid">
-                            <span class="home_information">
-                                <i class="bx bx-map home_icon"></i> 793/28/1/20A1 Tran Xuan Soan, Tan Hung Ward, Ho Chi Minh City, Vietnam 
+
+                        <div class="home_copy">
+                            <span class="eyebrow">Frontend Developer</span>
+                            <h1 class="home_title">Vu Hoang Hiep</h1>
+                            <p class="home_tagline">Frontend engineer specializing in Angular, scalable UI systems, and user-centered product experiences.</p>
+                        </div>
+
+                        <button type="button" class="button button--ghost home_button-movil js-download-cv">Download PDF</button>
+                    </section>
+
+                    <section class="section contact-card">
+                        <h2 class="section-title">Contact</h2>
+                        <div class="contact_list">
+                            <span class="contact_item">
+                                <i class="bx bx-map"></i>
+                                <span>Tan Hung Ward, Ho Chi Minh City, Vietnam</span>
                             </span>
-                            <span class="home_information">
-                                <i class="bx bx-envelope home_icon"></i> vhh0106@gmail.com
-                            </span>
-                            <span class="home_information">
-                                <i class="bx bx-phone home_icon"></i> 034 855 4851
-                            </span>
+                            <a href="mailto:vhh0106@gmail.com" class="contact_item">
+                                <i class="bx bx-envelope"></i>
+                                <span>vhh0106@gmail.com</span>
+                            </a>
+                            <a href="tel:0348554851" class="contact_item">
+                                <i class="bx bx-phone"></i>
+                                <span>034 855 4851</span>
+                            </a>
                         </div>
-                    </div>
+                    </section>
 
-                    <!-- Theme change button -->
-                    <i class="bx bx-moon change-theme" title="Theme" id="theme-button"></i>
-
-                    <!-- Button to generate and download the pdf. Available for desktop. -->
-                    <i class="bx bx-download generate-pdf" title="Download Cv" id="resume-button"></i>
-                </section>
-
-                <!--========== SOCIAL ==========-->
-                <section class="social section">
-                    <h2 class="section-title">SOCIAL</h2>
-                    <div class="social_container bd-grid">
-                        <a href="https://github.com/vhh0106 " target="_blank" class="social_link social_icon">
-                            <i class="bx bxl-github"></i> @vhh0106
-                        </a>
-                        <a href="https://www.facebook.com/vhh0106/" target="_blank" class="social_link social_icon">
-                            <i class="bx bxl-facebook"></i> @vhh0106
-                        </a>
-                        <a href="https://www.instagram.com/vhh0106.it/" target="_blank" class="social_link social_icon">
-                            <i class="bx bxl-instagram"></i> @vhh0106.it
-                        </a>
-                        <a href="https://www.linkedin.com/in/vu-hoang-hiep/" target="_blank" class="social_link social_icon">
-                            <i class="bx bxl-linkedin"></i> @vu-hoang-hiep
-                        </a>
-                    </div>
-                </section>
-
-                <!--========== PROFILE ==========-->
-                <section class="profile section" id="profile">
-                    <h2 class="section-title">Career goals</h2>
-                    <p class="profile_description">I would like to use the knowledge learned from University to become a qualified and responsible staff who can contribute to the success and value of your company, especially in the Frontend Developer and UI/UX Desginer </p>
-                </section>
-
-                <!--========== EDUCATION ==========-->
-                <section class="education section" id="education">
-                    <h2 class="section-title">Education</h2>
-                    <div class="education_container bd-grid">
-                        <div class="education_content">
-                            <div class="education_data bd-grid">
-                                <h3 class="education_title">Information Technology</h3>
-                                <span class="education_studies">Ho Chi Minh City University of Technology</span>
-                                <span class="education_year">2018 - 2022</span>
-                                <span class="education_year">GPA: 2.9/4</span>
-                            </div>
+                    <section class="section social">
+                        <h2 class="section-title">Connect</h2>
+                        <div class="social_container compact_links">
+                            <a href="https://github.com/vhh0106" target="_blank" rel="noreferrer" class="social_link">
+                                <i class="bx bxl-github"></i>
+                                <span>GitHub / vhh0106</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/vu-hoang-hiep/" target="_blank" rel="noreferrer" class="social_link">
+                                <i class="bx bxl-linkedin"></i>
+                                <span>LinkedIn / vu-hoang-hiep</span>
+                            </a>
+                            <a href="https://www.facebook.com/vhh0106/" target="_blank" rel="noreferrer" class="social_link">
+                                <i class="bx bxl-facebook"></i>
+                                <span>Facebook / vhh0106</span>
+                            </a>
+                            <a href="https://www.instagram.com/vhh0106.it/" target="_blank" rel="noreferrer" class="social_link">
+                                <i class="bx bxl-instagram"></i>
+                                <span>Instagram / vhh0106.it</span>
+                            </a>
                         </div>
-                    </div>
-                </section>
+                    </section>
 
+                    <section class="section skills" id="skills">
+                        <h2 class="section-title">Core Skills</h2>
 
-                <!--========== SKILLS  ==========-->
-                <section class="skills section" id="skills">
-                    <h2 class="section-title">Skills</h2>
-                    <div class="skills_content bd-grid">
-                        <ul class="skills_data">
-                            <li class="skills_name">
-                                <span class="skills_cricle"></span> Html/Css
-                            </li>
-                            <li class="skills_name">
-                                <span class="skills_cricle"></span> Tailwind
-                            </li>
-                            <li class="skills_name">
-                                <span class="skills_cricle"></span> JavaScript
-                            </li>
-                            <li class="skills_name">
-                                <span class="skills_cricle"></span> TypeScript
-                            </li>
-                            <li class="skills_name">
-                                <span class="skills_cricle"></span> Angular
-                            </li>
-                        </ul>
-                        <ul class="skills_data">
-                            <li class="skills_name">
-                                <span class="skills_cricle"></span> Adobe Photoshop
-                            </li>
-                            <li class="skills_name">
-                                <span class="skills_cricle"></span> Adobe Illustrator
-                            </li>
-                            <li class="skills_name">
-                                <span class="skills_cricle"></span> Adobe Premiere
-                            </li>
-                            <li class="skills_name">
-                                <span class="skills_cricle"></span> Canva
-                            </li>
-                        </ul>
-                    </div>
-                </section>
+                        <div class="chip_group">
+                            <span class="chip">Angular</span>
+                            <span class="chip">TypeScript</span>
+                            <span class="chip">JavaScript</span>
+                            <span class="chip">NgRx</span>
+                            <span class="chip">SCSS</span>
+                            <span class="chip">Tailwind CSS</span>
+                            <span class="chip">Bootstrap</span>
+                            <span class="chip">Ng Zorro</span>
+                        </div>
 
-            </div>
-
-            <div class="resume_right">
-                <!--========== EXPERIENCE ==========-->
-                <section class="experience section" id="experience">
-                    <h2 class="section-title">Experience</h2>
-
-                    <div class="experience_container bd-grid">
-                        <div class="experience_content">
-                            <div class="experience_time">
-                                <span class="experience_rounder"></span>
-                                <span class="experience_line "></span>
+                        <div class="skill_blocks">
+                            <div class="skill_block">
+                                <h3 class="skills_subtitle">Frontend</h3>
+                                <p>HTML5, CSS3, JavaScript (ES6+), TypeScript, Angular, jQuery</p>
                             </div>
-
-                            <div class="experience_data bd-grid ">
-                                <h3 class="experience_title ">DESIGNER</h3>
-                                <span class="experience_company "> Ho Chi Minh City University of Technology - Center of Corporate Relations</span>
-                                <span class="experience_company "> November 2021 - June 2022</span>
-                                <p class="experience_description ">Design media publications (backdrop, banner, poster, fanpage, edit video), Technical assistance. </p>
+                            <div class="skill_block">
+                                <h3 class="skills_subtitle">Styling</h3>
+                                <p>SCSS, Tailwind CSS, Bootstrap, responsive UI, component libraries, design systems</p>
+                            </div>
+                            <div class="skill_block">
+                                <h3 class="skills_subtitle">Design Tools</h3>
+                                <p>Figma, Adobe Photoshop, Adobe Illustrator, Canva, CapCut</p>
+                            </div>
+                            <div class="skill_block">
+                                <h3 class="skills_subtitle">Workflow</h3>
+                                <p>Git, Bitbucket, Jira, Agile/Scrum, cross-team collaboration</p>
                             </div>
                         </div>
-                        <div class="experience_content">
-                            <div class="experience_time">
-                                <span class="experience_rounder"></span>    
-                                <span class="experience_line "></span>
-                            </div>
+                    </section>
 
-                            <div class="experience_data bd-grid ">
-                                <h3 class="experience_title ">FRONTEND DEVELOPER</h3>
-                                <span class="experience_company "> June 2022 - Present</span>
-                                <span class="experience_company "> GOLF SOLFWARE SOLUTIONS COMPANY</span>
-                                <p class="experience_description ">Implemented websites, landing pages from concept through deployment. </p>
-                                <p class="experience_description ">Standardized all output with a new, responsive, mobile-first approach and strategy. </p>
-                                <p class="experience_description ">Assessed UX and UI designs for technical feasibility. </p>
-                                <p class="experience_description ">Developed standard and ad hoc reports in graph format as required. </p>
-                                <p class="experience_description ">Collaborated with product team members to implement new feature developments. </p>
+                    <section class="section education" id="education">
+                        <h2 class="section-title">Education</h2>
+                        <article class="info_card">
+                            <h3 class="education_title">Information Technology</h3>
+                            <p class="education_studies">Ho Chi Minh City University of Technology</p>
+                            <div class="meta_row">
+                                <span>2018 - 2022</span>
+                                <span>GPA: 2.9 / 4</span>
                             </div>
-                            
-                        </div>
-                    </div>
-                    <br>
-                    <br>
-                    <br>
-                    <h2 class="section-title">Projects</h2>
-                    <div class="experience_container bd-grid">
-                        <div class="experience_content">
-                            <div class="experience_time">
-                                <span class="experience_rounder"></span>
-                                <span class="experience_line "></span>
-                            </div>
+                        </article>
+                    </section>
+                </aside>
 
-                            <div class="experience_data bd-grid ">
-                                <h3 class="experience_title ">E-commerce website</h3>
-                                <span class="experience_company "> Link: https://www.truonghaicamau.com/</span>
-                                <p class="experience_description ">Tech stack: Html, Css, JavaScript, Bootstrap. </p>
+                <section class="resume_right">
+                    <section class="section profile first-section" id="profile">
+                        <div class="section-heading">
+                            <h2 class="section-title">Profile</h2>
+                            <span class="section-badge">3+ years</span>
+                        </div>
+                        <p class="profile_description">
+                            Frontend developer with hands-on experience delivering business web applications, refining UI/UX, and turning product requirements into reliable, maintainable interfaces. Strong in Angular, TypeScript, state management, and cross-functional collaboration from design to deployment.
+                        </p>
+                        <div class="highlight_grid">
+                            <div class="highlight_card">
+                                <span class="highlight_label">Focus</span>
+                                <p>Reusable UI, responsive layouts, and scalable frontend delivery for real business products.</p>
+                            </div>
+                            <div class="highlight_card">
+                                <span class="highlight_label">Strength</span>
+                                <p>Strong engineering execution supported by visual thinking and practical UX awareness.</p>
                             </div>
                         </div>
-                        <div class="experience_content">
-                            <div class="experience_time">
-                                <span class="experience_rounder"></span>
-                                <span class="experience_line "></span>
-                            </div>
-                            <div class="experience_data bd-grid ">
-                                <h3 class="experience_title ">E-commerce website</h3>
-                                <span class="experience_company " type="link"> vhhecommerce.id.vn </span>
-                                <p class="experience_description ">Tech stack: Wordpress </p>
-                            </div>
-                        </div>
-                        <div class="experience_content">
-                            <div class="experience_time">
-                                <span class="experience_rounder"></span>
-                                <span class="experience_line "></span>
-                            </div>
-                            <div class="experience_data bd-grid ">
-                                <h3 class="experience_title ">Portfolio website</h3>
-                                <span class="experience_company "> vhhdev.info </span>
-                                <p class="experience_description ">Tech stack: Html, Scss, JavaScript, Bootstrap. </p>
-                            </div>
-                        </div>
-                        <div class="experience_content">
-                            <div class="experience_time">
-                                <span class="experience_rounder"></span>
-                                <span class="experience_line "></span>
-                            </div>
-                            <div class="experience_data bd-grid ">
-                                <h3 class="experience_title ">GHandicap</h3>
-                                <span class="experience_company "> Link: ghandicap.com</span>
-                                <p class="experience_description ">Tech stack: Html, Css, TypeScript, Angular, Ngrx. </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                    </section>
 
-
-                <!--========== CERTIFICATES ==========-->
-                <section class="certificate section " id="certificates ">
-                    <h2 class="section-title ">Certificate</h2>
-                    <div class="certificate_container bd-grid ">
-                        <div class="certificate_content ">
-                            <h3 class="certificate_title ">THE DEGREE OF ENGINEER</h3>
-                            <p class="certificate_description ">Information Technology</p>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="certificate_container bd-grid ">
-                        <div class="certificate_content ">
-                            <h3 class="certificate_title ">General English Test At Entermediate Level</h3>
-                            <p class="certificate_description ">Administered in compliance with the CEF Level B1</p>
-                        </div>
-                    </div>
-                </section>
-                <!--========== REFERENCES ==========-->
-                <!--<section class="references section " id="references ">
-                    <h2 class="section-title ">References</h2>
-
-                    <div class="references_container bd-grid ">
-                        <div class="references_content bd-grid ">
-                            </span>
-                            <span class="references_subtitle ">
-                                <h3 class="references_title ">Ms. Phung Thi Thuy Trang</h3>
-                                <ul class="references_contact ">
-                                    <li>Phone:  0983 014 969</li>
-                                    <li>Email:  ptt.trang@hutech.edu.vn</li>
+                    <section class="section experience" id="experience">
+                        <h2 class="section-title">Experience</h2>
+                        <div class="timeline">
+                            <article class="timeline_item">
+                                <div class="timeline_header">
+                                    <div>
+                                        <h3 class="experience_title">Frontend Developer</h3>
+                                        <p class="timeline_company">Golf Software Solutions Company</p>
+                                    </div>
+                                    <span class="timeline_date">Jun 2022 - Present</span>
+                                </div>
+                                <ul class="timeline_list">
+                                    <li>Developed Angular and TypeScript applications with maintainable architecture and intuitive user flows.</li>
+                                    <li>Translated design concepts into polished, responsive interfaces using Figma, SCSS, and Tailwind CSS.</li>
+                                    <li>Collaborated closely with backend and design teams using Git, Bitbucket, and Jira in Agile workflows.</li>
                                 </ul>
+                            </article>
 
-                            
+                            <article class="timeline_item">
+                                <div class="timeline_header">
+                                    <div>
+                                        <h3 class="experience_title">Designer</h3>
+                                        <p class="timeline_company">HCMUT - Center of Corporate Relations</p>
+                                    </div>
+                                    <span class="timeline_date">Nov 2021 - Jun 2022</span>
+                                </div>
+                                <ul class="timeline_list">
+                                    <li>Designed banners, posters, social media visuals, and communication materials for university campaigns.</li>
+                                    <li>Provided technical support and maintained website content with a strong focus on consistency and presentation quality.</li>
+                                </ul>
+                            </article>
                         </div>
-                    </div>
-                </section>-->
+                    </section>
 
-                <!--========== INTERESTS ==========-->
-                <section class="interests section ">
-                    <h2 class="section-title ">Interests</h2>
-                    <div class="interests_container bd-grid ">
-                        <div class="interests_content ">
-                            <i class="bx bx-code-alt interests_icon "></i>
-                            <span class="interests_name ">Code</span>
-                        </div>
-                        <div class="interests_content ">
-                            <i class="bx bx-headphone interests_icon "></i>
-                            <span class="interests_name ">Music</span>
-                        </div>
-                        <div class="interests_content ">
-                            <i class="bx bxs-plane-alt interests_icon "></i>
-                            <span class="interests_name ">Travel</span>
-                        </div>
-                        <div class="interests_content ">
-                            <i class="bx bxs-game interests_icon "></i>
-                            <span class="interests_name ">Game</span>
-                        </div>
-                        <div class="interests_content ">
-                            <i class="bx bx-movie-play interests_icon "></i>
-                            <span class="interests_name ">Movie</span>
-                        </div>
+                    <section class="section projects" id="projects">
+                        <h2 class="section-title">Selected Projects</h2>
+                        <div class="project_grid">
+                            <article class="project_card">
+                                <div class="project_header">
+                                    <h3 class="project_title">Ur Cup</h3>
+                                    <span class="project_tag">POS / CMS</span>
+                                </div>
+                                <a href="https://urcupcafe.com/" target="_blank" rel="noreferrer" class="project_link">urcupcafe.com</a>
+                                <p class="project_stack">Angular, TypeScript, NgRx, Tailwind CSS, Ng Zorro</p>
+                            </article>
 
-                    </div>
+                            <article class="project_card">
+                                <div class="project_header">
+                                    <h3 class="project_title">Gonta</h3>
+                                    <span class="project_tag">GMS / CMS</span>
+                                </div>
+                                <a href="https://gss.net.vn/" target="_blank" rel="noreferrer" class="project_link">gss.net.vn</a>
+                                <p class="project_stack">Angular, TypeScript, NgRx, SCSS, Tailwind CSS, Ng Zorro</p>
+                            </article>
+
+                            <article class="project_card">
+                                <div class="project_header">
+                                    <h3 class="project_title">E-commerce</h3>
+                                    <span class="project_tag">Retail</span>
+                                </div>
+                                <a href="https://www.truonghaicamau.com/" target="_blank" rel="noreferrer" class="project_link">truonghaicamau.com</a>
+                                <p class="project_stack">HTML, CSS, JavaScript, Bootstrap, C#</p>
+                            </article>
+
+                            <article class="project_card">
+                                <div class="project_header">
+                                    <h3 class="project_title">Portfolio</h3>
+                                    <span class="project_tag">Portfolio</span>
+                                </div>
+                                <a href="https://vhh0106.github.io/" target="_blank" rel="noreferrer" class="project_link">vhh0106.github.io</a>
+                                <p class="project_stack">HTML, CSS, JavaScript, Bootstrap</p>
+                            </article>
+                        </div>
+                    </section>
+
+                    <section class="section certificate" id="certificate">
+                        <h2 class="section-title">Certificates</h2>
+                        <div class="certificate_grid">
+                            <article class="certificate_item">
+                                <h3 class="certificate_title">Engineer Degree</h3>
+                                <p>Information Technology</p>
+                            </article>
+                            <article class="certificate_item">
+                                <h3 class="certificate_title">English Test</h3>
+                                <p>CEF Level B1</p>
+                            </article>
+                            <article class="certificate_item">
+                                <h3 class="certificate_title">Pedagogical Cert.</h3>
+                                <p>Primary IT</p>
+                            </article>
+                        </div>
+                    </section>
+
+                    <section class="section interests" id="interests">
+                        <h2 class="section-title">Interests</h2>
+                        <div class="interests_container">
+                            <div class="interests_content">
+                                <i class="bx bx-code-alt interests_icon"></i>
+                                <span class="interests_name">Code</span>
+                            </div>
+                            <div class="interests_content">
+                                <i class="bx bx-headphone interests_icon"></i>
+                                <span class="interests_name">Music</span>
+                            </div>
+                            <div class="interests_content">
+                                <i class="bx bxs-plane-alt interests_icon"></i>
+                                <span class="interests_name">Travel</span>
+                            </div>
+                            <div class="interests_content">
+                                <i class="bx bxs-game interests_icon"></i>
+                                <span class="interests_name">Game</span>
+                            </div>
+                            <div class="interests_content">
+                                <i class="bx bx-movie-play interests_icon"></i>
+                                <span class="interests_name">Movie</span>
+                            </div>
+                        </div>
+                    </section>
                 </section>
-            </div>
+            </article>
         </div>
     </main>
 
-    <!--========== SCROLL TOP ==========-->
-    <a href=" " class="scrolltop" id="scroll-top">
-        <i class="bx bx-up-arrow-alt scrolltop_icon "></i>
+    <a href="#home" class="scrolltop" id="scroll-top" aria-label="Scroll to top">
+        <i class="bx bx-up-arrow-alt scrolltop_icon"></i>
     </a>
 
-    <!--========== HTML2PDF ==========-->
-    <script src="assets/js/html2pdf.bundle.min.js "></script>
-
-    <!--========== MAIN JS ==========-->
-    <script src="assets/js/main.js "></script>
+    <script src="assets/js/html2pdf.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
-
 </html>
+
+
+
