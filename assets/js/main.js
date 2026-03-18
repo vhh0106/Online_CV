@@ -129,7 +129,6 @@ async function waitForFonts() {
 
 const areaCV = document.getElementById('area-cv');
 const downloadButtons = document.querySelectorAll('#resume-button, .js-download-cv');
-
 const opt = {
     margin: [0, 0, 0, 0],
     filename: 'Vu-Hoang-Hiep-CV.pdf',
@@ -164,4 +163,3 @@ async function generateResume() {
 downloadButtons.forEach((button) => {
     button.addEventListener('click', generateResume);
 });
-

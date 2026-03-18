@@ -667,14 +667,13 @@ body.dark-theme .interests_content {
     bottom: 1.5rem;
     opacity: 1;
 }
-q
 body.scale-cv {
-    --h1-font-size: 2rem;
-    --h2-font-size: 0.7rem;
-    --h3-font-size: 0.86rem;
-    --normal-font-size: 0.73rem;
-    --small-font-size: 0.66rem;
-    --smaller-font-size: 0.58rem;
+    --h1-font-size: 2.15rem;
+    --h2-font-size: 0.74rem;
+    --h3-font-size: 0.9rem;
+    --normal-font-size: 0.76rem;
+    --small-font-size: 0.69rem;
+    --smaller-font-size: 0.6rem;
     background: #fff;
 }
 
@@ -690,33 +689,38 @@ body.scale-cv {
 
 .scale-cv .resume {
     width: 210mm;
-    height: 296mm;
+    min-height: 297mm;
+    height: auto;
     border: none;
     border-radius: 0;
     box-shadow: none;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .scale-cv .resume_left {
-    padding: 1.18rem 1.05rem;
+    padding: 1.28rem 1.12rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .scale-cv .resume_right {
-    padding: 1.14rem 1.1rem;
+    padding: 1.24rem 1.16rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .scale-cv .home_img {
-    width: 104px;
-    height: 104px;
+    width: 108px;
+    height: 108px;
 }
 
 .scale-cv .section {
-    margin-top: 0.8rem;
-    padding-top: 0.8rem;
+    margin-top: 0.92rem;
+    padding-top: 0.92rem;
 }
 
 .scale-cv .section-title {
-    margin-bottom: 0.56rem;
+    margin-bottom: 0.62rem;
 }
 
 .scale-cv .contact-card,
@@ -728,7 +732,7 @@ body.scale-cv {
 .scale-cv .certificate_item,
 .scale-cv .social_link,
 .scale-cv .interests_content {
-    padding: 0.64rem 0.68rem;
+    padding: 0.72rem 0.74rem;
 }
 
 .scale-cv .contact_list,
@@ -739,16 +743,16 @@ body.scale-cv {
 .scale-cv .certificate_grid,
 .scale-cv .highlight_grid,
 .scale-cv .interests_container {
-    gap: 0.48rem;
+    gap: 0.56rem;
 }
 
 .scale-cv .chip_group {
-    gap: 0.34rem;
-    margin-bottom: 0.54rem;
+    gap: 0.38rem;
+    margin-bottom: 0.62rem;
 }
 
 .scale-cv .chip {
-    padding: 0.26rem 0.52rem;
+    padding: 0.28rem 0.54rem;
 }
 
 .scale-cv .timeline::before {
@@ -770,8 +774,17 @@ body.scale-cv {
     margin-top: 0.16rem;
 }
 
+.scale-cv .education {
+    margin-top: auto;
+}
+
+.scale-cv .certificate {
+    margin-bottom: 0.32rem;
+}
+
 .scale-cv .interests {
-    display: none;
+    display: block;
+    margin-top: auto;
 }
 
 @media screen and (max-width: 968px) {
@@ -893,5 +906,9 @@ body.scale-cv {
         align-items: flex-start;
     }
 }
+
+
+
+
 
 
