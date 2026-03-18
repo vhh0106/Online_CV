@@ -140,7 +140,7 @@ const opt = {
         scrollY: 0,
         backgroundColor: '#ffffff'
     },
-    pagebreak: { mode: ['avoid-all', 'css', 'legacy'] },
+    pagebreak: { mode: ['css', 'legacy'] },
     jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
 };
 
@@ -164,3 +164,4 @@ async function generateResume() {
 downloadButtons.forEach((button) => {
     button.addEventListener('click', generateResume);
 });
+

@@ -667,7 +667,7 @@ body.dark-theme .interests_content {
     bottom: 1.5rem;
     opacity: 1;
 }
-
+q
 body.scale-cv {
     --h1-font-size: 2rem;
     --h2-font-size: 0.7rem;
@@ -678,7 +678,10 @@ body.scale-cv {
     background: #fff;
 }
 
-.scale-cv .page-shell,
+.scale-cv .page-shell {
+    padding: 0;
+}
+
 .scale-cv .l-header,
 .scale-cv .scrolltop,
 .scale-cv .home_button-movil {
@@ -687,10 +690,11 @@ body.scale-cv {
 
 .scale-cv .resume {
     width: 210mm;
-    height: 297mm;
+    height: 296mm;
     border: none;
     border-radius: 0;
     box-shadow: none;
+    overflow: hidden;
 }
 
 .scale-cv .resume_left {
@@ -889,4 +893,5 @@ body.scale-cv {
         align-items: flex-start;
     }
 }
+
 
